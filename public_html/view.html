@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>[時間軸]日本電視動畫</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/png" href="http://www.shentengtu.lionfree.net/logo/favicon.png" />
+
+        <script src="js/browserUpdateInform.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
+        <link rel="stylesheet" href="http://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+        
+    </head>
+    <body style="background-color: #FOFOFO;">
+        
+        <div id="wrapper" class="blurring">
+            <div class="ui dimmer"><div id="loader" class="ui loader"></div></div>
+            <div style="margin: 1%;">
+                <div class="ui floating message">
+                    <h1 class="ui dividing header">日本電視動畫時間軸(<span data-bind="text: timeLineList()[selectedTimeLine()]['theYear']"></span>年)</h1>
+                    <p></p>
+                    <select class="ui dropdown" data-bind="options: timeLineList,optionsText: 'theYear',value: selectedTimeLine,optionsValue: 'id'" ></select>
+                    <p data-bind="visible: Number.isInteger(selectedTimeLine())">
+                        根據維基百科的<a id="reflink" href="#">日本動畫列表 (<span data-bind="text: timeLineList()[selectedTimeLine()]['theYear']"></span>年)</a>所製作。
+                    </p>
+                </div>
+                <div class="ui segment">
+                    <div id="timeline-embed" style="width: 100%; height: 612px; background-color: #FEFEFE;"></div>
+                </div>
+            </div>
+        </div>
+        <script  class="jscdn" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script class="jscdn" src="http://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+        <script class="jscdn" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.js"></script>
+        <script class="jscdn" src="http://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+        <script src="js/view.js"></script>
+    </body>
+</html>

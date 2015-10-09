@@ -1,0 +1,33 @@
+/* https://browser-update.org */
+.buorg {
+    position:absolute;
+    width:98%;
+    top:0px;
+    margin-left:1%;
+    margin-right:1%;
+    border-bottom:1px solid #A29330;
+    border-left:1px solid #A29330;
+    border-right:1px solid #A29330;
+    background:#FDF2AB no-repeat 1em 0.55em url(http://browser-update.org/img/dialog-warning.gif);
+    text-align:left;
+    cursor:pointer;
+    font-family: Arial,Helvetica,sans-serif; color:#020202;
+    font-size: 16px;
+}
+.buorg div {
+    padding:8px 40px 8px 40px;
+}
+.buorg a {
+    color:#E25600;
+}
+#buorgclose {
+    position: absolute;
+    right: .5em;
+    top:.2em;
+    height: 20px;
+    width: 12px;
+    font-weight: bold;
+    font-size:16px;
+    padding:0;
+}
+
