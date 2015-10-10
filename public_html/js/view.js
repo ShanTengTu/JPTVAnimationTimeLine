@@ -45,7 +45,7 @@ function display(id) {
 ;
 
 TimeLineViewModel.selectedTimeLine.subscribe(function (selectedValue) {
-    display(selectedValue)
+    display(selectedValue);
 });
 ko.applyBindings(TimeLineViewModel);
 
