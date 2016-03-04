@@ -1,5 +1,5 @@
 # JPTVAnimationTimeLine
-The timeline about japanese TV animation. see [here].
+The timeline about japanese TV animation. see the [demo].
 
 # External JS
 - [jQuery]
@@ -12,7 +12,7 @@ Use [Semantic UI].
 # Data Reference
 All data refer from [Wikipedia].
 
-[here]:<http://timeline.shentengtu.lionfree.net/JPTVAnimation/view>
+[demo]:<http://demo.shentengtu.idv.tw/jptv_animation_timeline/view.html>
 [jQuery]:<http://jquery.com/>
 [Timeline JS 3]:<https://timeline.knightlab.com/>
 [Knockout]:<http://knockoutjs.com/>
